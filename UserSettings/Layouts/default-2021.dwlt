@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 80
+  controlID: 63
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 70
+  controlID: 64
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 71
+  controlID: 65
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -363,7 +363,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
+    m_HSlider: 1
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
@@ -377,18 +377,18 @@ MonoBehaviour:
       y: 21
       width: 612.6666
       height: 607.3333
-    m_Scale: {x: 0.2393229, y: 0.23932289}
-    m_Translation: {x: 306.3333, y: 303.66666}
+    m_Scale: {x: 0.25389764, y: 0.25389764}
+    m_Translation: {x: 321.2335, y: 303.66666}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1280
-      y: -1268.8575
-      width: 2560
-      height: 2537.715
+      x: -1265.2086
+      y: -1196.02
+      width: 2413.046
+      height: 2392.04
     m_MinimalGUI: 1
   m_defaultScale: 0.2393229
   m_LastWindowPixelSize: {x: 918.99994, y: 942.5}
@@ -673,11 +673,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.22680864, y: -0.51379895, z: 0.14313242, w: -0.81500304}
     speed: 2
-    m_Value: {x: -0.2265769, y: -0.5149827, z: 0.14346184, w: -0.8141711}
+    m_Value: {x: 0.22680862, y: 0.5137989, z: -0.14313242, w: 0.815003}
   m_Size:
     m_Target: 3.3882253
     speed: 2
-    m_Value: 3.2423208
+    m_Value: 3.3882253
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1002,14 +1002,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\matej\Documents\Unity\Ecology
+  m_LastProjectPath: C:\Users\matej\Documents\GitHub\IslandRecycler
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 80ab0000
-    m_LastClickedID: 43904
-    m_ExpandedIDs: 0000000080ab000082ab000084ab000086ab000088ab00008aab000000ca9a3bffffff7f
+    m_SelectedIDs: 4c690000
+    m_LastClickedID: 26956
+    m_ExpandedIDs: 000000004c6900004e6900005069000052690000546900005669000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1037,7 +1037,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000080ab000082ab000084ab000086ab000088ab00008aab0000
+    m_ExpandedIDs: 000000004c6900004e69000050690000526900005469000056690000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1183,9 +1183,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a8a30000
-      m_LastClickedID: 41896
-      m_ExpandedIDs: 40c8ffff7ca30000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
