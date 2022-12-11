@@ -411,6 +411,14 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 550596330}
+    - target: {fileID: 6653078190633656204, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
+      propertyPath: currItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 0260c9bacae8fe04982291e8beda012e, type: 2}
+    - target: {fileID: 8868436848407405126, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4a1321e7a63f45a4396ea7d1c6f85b63, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
 --- !u!224 &255491560 stripped
@@ -668,15 +676,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c15df840dccb78d4899205441c04f365, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -792,6 +800,14 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 550596330}
+    - target: {fileID: 6653078190633656204, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
+      propertyPath: currItem
+      value: 
+      objectReference: {fileID: 11400000, guid: c4a3907f07734684cad84649f6cb709c, type: 2}
+    - target: {fileID: 8868436848407405126, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a413cb2ea1012984ca6f5f1d4a96c9d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
 --- !u!224 &409201484 stripped
@@ -920,6 +936,14 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 550596330}
+    - target: {fileID: 6653078190633656204, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
+      propertyPath: currItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 369391dbbdbeb6e41af00e93d0174c85, type: 2}
+    - target: {fileID: 8868436848407405126, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 70632ddfe8e71b04b8f90ef7e29a9e98, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
 --- !u!224 &485131231 stripped
@@ -1211,6 +1235,14 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 550596330}
+    - target: {fileID: 6653078190633656204, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
+      propertyPath: currItem
+      value: 
+      objectReference: {fileID: 11400000, guid: fc7da7600e07129499fb6c06c2dec275, type: 2}
+    - target: {fileID: 8868436848407405126, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 51c54fb0cc384304abe6867a84ff7b04, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
 --- !u!224 &596974108 stripped
@@ -1575,6 +1607,10 @@ PrefabInstance:
       propertyPath: currItem
       value: 
       objectReference: {fileID: 11400000, guid: 8327a2a53ed96d84c93fd23d7c5a94a2, type: 2}
+    - target: {fileID: 8868436848407405126, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
 --- !u!224 &964218413 stripped
@@ -1681,6 +1717,14 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 550596330}
+    - target: {fileID: 6653078190633656204, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
+      propertyPath: currItem
+      value: 
+      objectReference: {fileID: 11400000, guid: e4953a0512b2dae45ba184888459e8f4, type: 2}
+    - target: {fileID: 8868436848407405126, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 380e0251f0aec4142819ce0bca6e5da1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
 --- !u!224 &1152089547 stripped
@@ -2029,6 +2073,14 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 550596330}
+    - target: {fileID: 6653078190633656204, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
+      propertyPath: currItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 6c55b838d6a431e4e8f23e53e82453ba, type: 2}
+    - target: {fileID: 8868436848407405126, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 17035c204825f6340a252046ab6476fd, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe2c384949347fe49af0f0cc64bb2b97, type: 3}
 --- !u!224 &1867786076 stripped
