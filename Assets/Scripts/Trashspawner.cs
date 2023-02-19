@@ -1,38 +1,56 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class Trashspawner : MonoBehaviour
 {
-    public int trashcount;
     public GameObject Plastic;
-    public GameObject metal;
-    public GameObject glass;
-    public GameObject paper;
-    public int type;
+    public GameObject Metal;
+    public GameObject Glass;
+    public GameObject Paper;
+    public int trashCount;
+    
     void Start()
     {
-        StartCoroutine(Spawn());
+        StartCoroutine(InitialSpawn());
     }
     void Update()
     {
         
     }
-    IEnumerator Spawn()
+
+    GameObject getRandomMaterial()
     {
-        while (trashcount < 1)
+        var random = new System.Random();        
+        var materialOptions = new List<GameObject>{
+            Plastic, 
+            Plastic, 
+            Plastic, 
+            Plastic,  // Frequency of plastic - 40%
+            Paper,
+            Paper,
+            Paper, // Frequency of paper - 30%
+            Glass, 
+            Glass, // Frequency of glass - 20%
+            Metal // Frequency of metal - 10%
+        };
+        int pickedIndex = random.Next(materialOptions.Count);
+        
+        return materialOptions[pickedIndex];
+    }
+
+    IEnumerator InitialSpawn()
+    {        
+        Instantiate(getRandomMaterial(), new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+        Instantiate(getRandomMaterial(), new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+        Instantiate(getRandomMaterial(), new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+        trashCount = 3;
+        
+        while (trashCount < 5)
         {
-            float timer = Random.Range(5, 6);
-            switch (type)
-            {
-                case 0:
-                    Instantiate(Plastic, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
-                    break;
-                case 1:
-                    Instantiate(glass, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
-                    break;
-            }
-            trashcount++;
+            float timer = UnityEngine.Random.Range(5, 6);
+            Instantiate(getRandomMaterial(), new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+            trashCount++;
             yield return new WaitForSeconds(timer);
         }
     }
