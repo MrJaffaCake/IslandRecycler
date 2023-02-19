@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//
+// dodadi na kamerata
+//
+// za dvizenje na kamerata so igracot (so granici):
+// player.position.x, [od x koordinata]f, [do x koorinata]f
+// istoto za z
+//
+
 public class CameraFollow : MonoBehaviour
 {
     public Transform player;
-    private void Start()
-    {
-        transform.position = new Vector3(-2.92f, transform.position.y, transform.position.z);
-    }
     void Update()
     {
-        transform.position = new Vector3(Mathf.Clamp(player.position.x, -6.15f, 9999999f),
-            transform.position.y,
-            transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(player.position.x, 16f, 38f), transform.position.y, Mathf.Clamp(player.position.z, -21f, 5f));
     }
 }
