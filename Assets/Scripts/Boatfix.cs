@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class Boatfix : MonoBehaviour
 {
-    public GameObject trashspawns;
     public GameObject smoke;
     public GameObject boatfixed;
     public GameObject boatbroken;
     public GameObject player;
-    void Start()
-    {
 
-    }
+    private bool closeEnough;
+
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        closeEnough = false;
+        if (Vector3.Distance(player.transform.position, transform.position) <= 6)
+        {
+            closeEnough = true;
+        }
+
+        if (Input.GetMouseButtonDown(0) && closeEnough)
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -32,9 +36,6 @@ public class Boatfix : MonoBehaviour
     }
     void boatappear()
     {
-        trashspawns.SetActive(true);
-        this.GetComponent<CameraFollow>().enabled = true;
-        player.SetActive(false);
         smoke.SetActive(false);
         boatfixed.SetActive(true);
         boatbroken.SetActive(false);

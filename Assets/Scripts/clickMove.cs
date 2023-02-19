@@ -22,7 +22,7 @@ public class clickMove : MonoBehaviour
         {
             if(Physics.Raycast(ray, out hit, 100))
             {
-                if(hit.transform.gameObject.tag == "Terrain")
+                if(hit.transform.gameObject.tag == "Terrain" || hit.transform.gameObject.tag == "Land1")
                 nav.destination = hit.point;
             }
         }

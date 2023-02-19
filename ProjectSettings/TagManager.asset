@@ -13,6 +13,7 @@ TagManager:
   - boatfix
   - turtletrigger
   - recycleisland
+  - fixedboat
   layers:
   - Default
   - TransparentFX
