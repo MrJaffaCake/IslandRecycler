@@ -5,7 +5,7 @@ using UnityEngine;
 
 class COLLECT : MonoBehaviour
 {
-    public Animator animator;
+    //public Animator animator;
     public GameObject PlastikaTekst;
     public GameObject StakloTekst;
     public GameObject MetalTekst;
@@ -13,20 +13,20 @@ class COLLECT : MonoBehaviour
     private GameObject txtbox;
 
     public GameObject Player;
-    private bool closeEnough;
+    private bool closeEnough, clicked = false;
 
     void Start()
     {
      //   PlastikaTekst.SetActive(false);
-        StakloTekst.SetActive(false);
-        MetalTekst.SetActive(false);
-        HartijaTekst.SetActive(false);
+        //StakloTekst.SetActive(false);
+        //MetalTekst.SetActive(false);
+        //HartijaTekst.SetActive(false);
     }
 
     void Update()
     {
         closeEnough = false;
-        if (Vector3.Distance(Player.transform.position, transform.position) <= 99999999)
+        if (Vector3.Distance(Player.transform.position, transform.position) <= 3)
         {
             closeEnough = true;
         }
@@ -39,14 +39,16 @@ class COLLECT : MonoBehaviour
             if (Physics.Raycast(ray, out hit))
             {
                 BoxCollider b = hit.collider as BoxCollider;
-                if (b != null && closeEnough)
+                if (b != null && closeEnough && !clicked)
                 {
                     if (hit.transform.gameObject.CompareTag("Plastic"))
                     {
-                        PlastikaTekst.SetActive(true);
-                        txtbox = PlastikaTekst;
+                        clicked = true;
+                        FindObjectOfType<AudioManager>().Play("Collect");
+                        //PlastikaTekst.SetActive(true);
+                        //txtbox = PlastikaTekst;
                         //  Invoke("DeleteImage", 3f);
-                        animator.SetTrigger("comfromup");
+                        //animator.SetTrigger("comfromup");
 
                         StartCoroutine(FadeOut(hit));
                         StartCoroutine(WaitForFade(hit));
@@ -54,8 +56,10 @@ class COLLECT : MonoBehaviour
 
                     if (hit.transform.gameObject.CompareTag("Glass"))
                     {
-                        StakloTekst.SetActive(true);
-                        txtbox = StakloTekst;
+                        clicked = true;
+                        FindObjectOfType<AudioManager>().Play("Collect");
+                        //StakloTekst.SetActive(true);
+                        //txtbox = StakloTekst;
                    //     Invoke("DeleteImage", 3f);
 
 
@@ -65,8 +69,9 @@ class COLLECT : MonoBehaviour
 
                     if (hit.transform.gameObject.CompareTag("Metal"))
                     {
-                        MetalTekst.SetActive(true);
-                        txtbox = MetalTekst;
+                        clicked = true;
+                        //MetalTekst.SetActive(true);
+                       // txtbox = MetalTekst;
                      //   Invoke("DeleteImage", 3f);
 
                         StartCoroutine(FadeOut(hit));
@@ -75,8 +80,9 @@ class COLLECT : MonoBehaviour
 
                     if (hit.transform.gameObject.CompareTag("Paper"))
                     {
-                        HartijaTekst.SetActive(true);
-                        txtbox = HartijaTekst;
+                        clicked = true;
+                        //HartijaTekst.SetActive(true);
+                        //txtbox = HartijaTekst;
                     //    Invoke("DeleteImage", 3f);
 
                         StartCoroutine(FadeOut(hit));
@@ -100,7 +106,9 @@ class COLLECT : MonoBehaviour
 
     IEnumerator WaitForFade(RaycastHit hit)
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(0.999f);
+        clicked = false;
+        yield return new WaitForSeconds(0.001f);
         hit.transform.gameObject.SetActive(false);
     }
     void DeleteImage()
